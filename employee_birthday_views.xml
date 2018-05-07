@@ -1,0 +1,43 @@
+ <odoo>
+  <data>
+
+        <menuitem
+            name="Employee birthday report"
+            id="menu_hr_birthday_form"
+            parent="hr.menu_hr_root"
+            action="action_view_form_birthday"
+            groups = "hr.group_hr_user,hr.group_hr_manager,base.group_user"/>
+
+        <record id="view_form_birthday" model="ir.ui.view">
+            <field name="name">wizard.birthday</field>
+            <field name="model">wizard.birthday</field>
+            <field name="arch" type="xml">
+
+               
+                <form string="Birthday Report">
+                    <group>
+                        <field name="date_from"/>
+                        <field name="date_to"/>
+                    </group>
+                    <footer>
+                        <button name="print_report"  string="Print" type="object" class="btn-primary"/>
+                        <button string="Cancel" class="btn-default" special="cancel"/>
+                    </footer>
+                </form>
+
+            </field>
+        </record>
+
+        <record id="action_view_form_birthday" model="ir.actions.act_window">
+            <field name="name">Birthday report</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">wizard.birthday</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="view_form_birthday"/>
+            <field name="target">new</field>          
+        </record>
+
+        
+  </data>
+</odoo>

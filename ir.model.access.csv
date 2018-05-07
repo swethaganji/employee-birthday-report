@@ -1,0 +1,17 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+
+hr.access_hr_employee_user,hr.employee user,hr.model_hr_employee,hr.group_hr_user,1,1,1,1
+
+access_hr_employee_user2,hr.employee user,hr.model_hr_employee,base.group_user,1,1,1,1
+
+hr.access_hr_employee_resource_user,resource.resource.user,resource.model_resource_resource,hr.group_hr_user,1,1,1,1
+
+access_hr_employee_resource_user1,resource.resource.user1,resource.model_resource_resource,hr.group_hr_manager,1,1,1,1
+
+access_hr_employee_resource_user2,resource.resource.user2,resource.model_resource_resource,base.group_user,1,1,1,1
+
+hr.access_hr_employee_system_user,hr.employee system user,hr.model_hr_employee,base.group_user,1,1,1,1
+
+access_hr_employee_system_user1,hr.employee system user1,hr.model_hr_employee,hr.group_hr_user,1,1,1,1
+
+access_hr_employee_system_user2,hr.employee system user2,hr.model_hr_employee,hr.group_hr_manager,1,1,1,1

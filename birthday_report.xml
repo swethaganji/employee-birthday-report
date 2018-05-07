@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+   
+
+    <report
+
+    	id="report_birthday"
+        string="Birthday Report"
+        model="hr.employee"
+        report_type="qweb-pdf"
+        file="employee_birthday.register_report"
+        name="employee_birthday.register_report"
+       
+    />
+    
+</odoo>
